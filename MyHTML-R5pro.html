@@ -53,10 +53,10 @@
         /* 按键区 */
         
         .header2 {
-            padding-top: 16px;
+            width: 100%;
             height: 80px;
-            background-image: url('2.jpg');
-            background-repeat: no-repeat;
+            background-color: blue;
+            float: left;
         }
         
         #head_img {
@@ -78,15 +78,16 @@
         .topnav li {
             /* 导航条选项 */
             float: left;
-            display: block;
+            display: table-row;
             color: black;
             width: 118px;
             height: 64px;
             text-align: center;
-            padding: 25px 16px;
+            padding: 21px 16px;
             text-decoration: none;
             font-size: 14px;
             font-family: Microsoft YaHei;
+            vertical-align: middle;
         }
         
         .selected_top {
@@ -186,7 +187,7 @@
             margin-top: 38px;
             background-color: white;
             text-align: center;
-            height: 40%;
+            height: 55%;
         }
         
         #myInput {
@@ -215,7 +216,7 @@
             display: table;
             background-color: #ccc;
             border-top-style: none;
-            width: calc( 100% - 1em);
+            width: calc(100% - 1em);
         }
         
         tr {
@@ -235,9 +236,9 @@
             display: block;
             overflow-x: hidden;
             overflow-y: auto;
-            height: 50px;
-            border-width: 1px;
+            height: 150px;
             /* 数据显示行数设置 */
+            border-width: 1px;
         }
         
         tbody tr {
@@ -310,20 +311,27 @@
     <!--网页整体高度设置（需要和html的height属性值一致）-->
     <div class="header">
         <!--网页最上端区域的格式-->
-        <img id="head_img" src="1.jpg" />
+        <img id="head_img" src="JPG/1.jpg" />
         <!--网页最上端插入图片，src放入图片的相对地址，若置于同一目录下则只需输入图片名称-->
     </div>
     <div class="header2">
-        <form name="input" style="text-align: right;">
-            <a href="http://htmlpreview.github.io/?https://github.com/piano2013/Firework/blob/master/Myanswer.html"><input type="button" value="点我^_^" /></a>
-        </form>
+        <span>
+            <img src="PNG/书籍.png" style="width:50px;height:50px;vertical-align: middle;margin: 15px 20px;" /></span>
+        <span style="font-size: 25px;font-weight: 700;vertical-align: middle;position: relative;">我的网页
+        </span>
+        <span>
+            <img src="JPG/2.jpg" style="height: 50px;width: 100px;margin-left: -20px;vertical-align: middle;z-index: -1;" /></span>
+        <span style="float: right;margin: 15px 20px;">
+                <a href="http://htmlpreview.github.io/?https://github.com/piano2013/Firework/blob/master/Myanswer.html"><input
+                        type="button" value="点我^_^" /></a>
+        </span>
     </div>
-    <div class="topnav" style="border-bottom: 1px solid gray;">
+    <div class="topnav" style="border-bottom: 1px solid gray;vertical-align: middle;">
 
         <!--将下方的“书籍.png”替换为需要放置的图片的文件名（注意图片需在同一目录下，若无需调节图片大小，删掉style中的height与width即可）-->
-        <li class="selected_top"><img src="3.jpg" style="vertical-align: middle;height: 30px;width: 30px;" />上传文件</li>
-        <li><img src="3.jpg" style="vertical-align: middle;height: 30px;width: 30px;" />下载文件</li>
-        <li><img src="3.jpg" style="vertical-align: middle;height: 30px;width: 30px;" />我的设置</li>
+        <li class="selected_top"><img src="PNG/书籍.png" style="vertical-align: middle;height: 30px;width: 30px;" />上传文件</li>
+        <li><img src="PNG/书籍.png" style="vertical-align: middle;height: 30px;width: 30px;" />下载文件</li>
+        <li><img src="PNG/书籍.png" style="vertical-align: middle;height: 30px;width: 30px;" />我的设置</li>
     </div>
     <div class="content" style="background-color: gray;margin-bottom: 10px;height: 60%;">
         <div class="content_sign">
